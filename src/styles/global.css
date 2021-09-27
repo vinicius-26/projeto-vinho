@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:#fff;
+    --background: #F2F3F5;
+    --background-dark: #652E22;
+    --background-primary: #880000;
+    --background-button-sucess: #005580;
+    --text-title: #4D2626;
+    --text: #806161;
+    --text-button:#FFFFFF;
+    --text-highlight: #B3B9FF;
+    --red: #E83F5B;
+    --green: #4CD62B;
+    --blue: #5965E0;
+    --blue-dark: #4953B8;
+    --blue-twitter: #2AA9E0;
+    --gray-line: #DCDDE0;
+    --background-input: #F8F8FC;
+}
+
+@media(max-width: 1080px){
+    html {
+        font-size: 93.75%;
+    }
+}
+
+
+@media(max-width: 720){
+    html {
+        font-size: 87.5%;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+body, input, textarea, button{
+    font: 400 4rem 'Poppins', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
