@@ -8,7 +8,7 @@ export function Login(){
                 <span>Login</span>
 
             <form id="login" action="">
-                <label htmlFor="">Usuário</label>
+                <label htmlFor="">Usuário 3</label>
                 <br />
                 <input type="text" />
 
