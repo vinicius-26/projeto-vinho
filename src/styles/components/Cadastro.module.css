@@ -1,0 +1,184 @@
+.containerCadastro{
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--background);
+}
+
+.welcomeCadastro{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--background-dark);
+    color: var(--text-button);
+    padding-left: 1.6rem;
+    
+}
+
+.welcomeCadastro span{
+    font-size: 3rem;
+    margin-top: 10rem;
+    margin-left: 2rem
+}
+.welcomeCadastro p{
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    margin-left: 2rem
+}
+
+
+.cadastroUsuario{
+    width: 500px;
+    background: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 3px 20px 0 rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 3px 20px 0 rgb(0 0 0 / 10%);
+    -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    padding: 1.6rem;
+    margin: 2rem 0 2rem 15rem;
+}
+
+.cadastroTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastroTitle span{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    margin: 0;
+    font-size: 2.6rem;
+    color: var(--background-primary);
+    margin-right: 1rem;
+}
+
+.cadastroTitle img{
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-left: 1rem;
+}
+
+
+.cadastroUsuario form{
+    width: 100%;
+    position: relative;
+}
+
+.cadastroUsuario form select{
+    width: 20rem;
+    height: 2.313rem;
+    border-radius: 0.4rem;
+    background: #ebebeb;
+    font-size: 1rem;
+    color: var(--text);
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding: 0 1.5rem;
+}
+
+.cadastroUsuario form select:invalid{
+    color: gray;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}
+
+.cadastroUsuario form input{
+    font-size: 15px;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 0 1.5rem;
+    border: none;
+    color: var(--text);
+    
+}
+
+.cadastroUsuario form input:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
+}
+
+.cadastroUsuario form label{
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.cadastroButton{
+    display: flex;
+    justify-content: right;
+}
+
+.cadastroButton button{
+    width: 100%;
+    height: 2.6rem;
+    background: var(--background-primary);
+    color: var(--white);
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 2.2rem;
+}
+
+.cadastroButton button:hover{
+    background: var(--background-dark);
+}
+
+.cadastroUsuario a{
+
+    color: var(--background-primary);
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    display: block;
+    text-align: center;
+    transition: 0.2s;
+    margin: 0;
+}
+
+.cadastroUsuario a:hover{
+    color: rgb(111, 0, 0);
+}
+
+.cadastroUsuario p{
+    font-size: 1rem;
+    color: var(--text);
+    margin-top: 2.6rem;
+    text-align: center;
+}
+
+@media (max-width: 880px){
+    .welcomeCadastro{
+        width: 0;
+        height: 0;
+    }
+    .containerCadastro{
+        font-size: 0.8rem;
+        
+    }
+}

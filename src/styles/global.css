@@ -9,18 +9,21 @@
     --background: #F2F3F5;
     --background-dark: #652E22;
     --background-primary: #880000;
+    --background-primary-dark: #720000;
     --background-button-sucess: #005580;
+    --background-button-dark: #004263;
     --text-title: #4D2626;
     --text: #806161;
-    --text-button:#FFFFFF;
+    --text-button:#F0F0F7;
     --text-highlight: #B3B9FF;
     --red: #E83F5B;
-    --green: #4CD62B;
+    --green: #28A745;
+    --green-dark: #147b2c;
     --blue: #5965E0;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
     --gray-line: #DCDDE0;
-    --background-input: #F8F8FC;
+    --background-input: #FFFFFF;
 }
 
 @media(max-width: 1080px){
@@ -33,16 +36,21 @@
 @media(max-width: 720){
     html {
         font-size: 87.5%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 body {
     background: var(--background);
     color: var(--text);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 body, input, textarea, button{
-    font: 400 4rem 'Poppins', sans-serif;
+    font: 400 2rem 'Poppins', sans-serif;
 }
 
 button{

@@ -1,0 +1,123 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    background-color: var(--background);
+}
+
+.container section span{
+    text-align: left;
+    display: flex;
+    color: var(--text-title);
+    font-size: 3rem;
+}
+
+.container section p{
+    text-align: left;
+    display: flex;
+    font-size: 1.6rem;
+    margin: 2rem 2rem;
+}
+
+.content img{
+    width: 8rem;
+}
+
+.container section{
+    width: 80%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.uva {
+    margin-right: 2rem;
+}
+
+.tanque {
+    margin-right: 2rem;
+}
+
+.cliente {
+    margin-right: 2rem;
+}
+
+.uva button{
+    width: 100%;
+    height: 2.6rem;
+    background: var(--background-primary);
+    color: var(--white);
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 2.2rem;
+}
+
+.uva button:hover{
+    background: var(--background-primary-dark);
+}
+
+.tanque button{
+    width: 100%;
+    height: 2.6rem;
+    background: var(--background-primary);
+    color: var(--white);
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 2.2rem; 
+}
+
+.tanque button:hover{
+    background: var(--background-primary-dark);
+}
+
+.cliente button{
+    width: 100%;
+    height: 2.6rem;
+    background: var(--background-primary);
+    color: var(--white);
+    border: 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 2.2rem; 
+}
+
+.cliente button:hover{
+    background: var(--background-primary-dark);
+}
