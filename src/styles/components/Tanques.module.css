@@ -94,6 +94,14 @@
 }
 
 
+.content main section div img{
+    width: 2rem;
+    margin: 2rem;
+}
+
+
+
+
 
 .buttonOpenModal{
     border: none;
@@ -101,5 +109,5 @@
 }
 
 .buttonOpenModal img{
-    width: 50rem;
+    width: 20rem;
 }

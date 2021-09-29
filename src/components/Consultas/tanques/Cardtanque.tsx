@@ -23,7 +23,8 @@ function CardTanque(){
 
                 <main>
                     <section>
-                        <img src="img/tank.png" alt="" />
+                                                <img src="img/tank.png" alt="" />
+                        
 
                         <div className="">
                             <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <img src="img/plus.png" alt="" /> </button>
