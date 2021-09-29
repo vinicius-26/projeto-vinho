@@ -8,7 +8,7 @@ export default function Home() {
   return (
    <div className="container">
      <html>
-       <NavBar></NavBar>
+      <NavBar/>
       <CardTanque></CardTanque>
      </html>
    </div>

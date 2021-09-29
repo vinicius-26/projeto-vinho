@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
   return (
    <html>
       <title>Projeto Vinho</title>
-      {/* <NavBar/> */}
     
       <Component {...pageProps} />
     </html>

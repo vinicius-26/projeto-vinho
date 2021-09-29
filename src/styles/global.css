@@ -46,7 +46,7 @@ body {
     background: var(--background);
     color: var(--text);
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body, input, textarea, button{

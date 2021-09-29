@@ -1,4 +1,6 @@
 import styles from '../../styles/components/NavBar.module.css'
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export function NavBar(){
     return(

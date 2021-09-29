@@ -1,4 +1,5 @@
 import styles from '../../styles/components/LandingHome.module.css'
+import {Link} from 'react-router-dom';
 
 export function LandingHome(){
     return(
@@ -16,7 +17,7 @@ export function LandingHome(){
 
                 <div className={styles.tanque}>
                     <img src="img/tank.png" alt="" />
-                    <button>TANQUE</button>
+                        <button>TANQUE</button>
                 </div>
 
                 <div className={styles.cliente}>
