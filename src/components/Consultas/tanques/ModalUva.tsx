@@ -1,27 +1,24 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { ModalUvaContext } from '../../../contexts/ModalContext';
 import styles from '../../../styles/components/ModalUva.module.css'
 
-export function ModalUva(){
-    const { modalClose } = useContext(ModalUvaContext)
+export function ModalUva({onClose = () => {}}){
 
-    return(
-        
+    return(  
         <div className={styles.overlay}>
             <div className={styles.container}>
-                <header></header>
-
-                <strong>Uva que está sendo colocada no tanque</strong>
-                
-                <button type="button" onClick={modalClose}>
-                    <img src="/img/icons/close.svg" alt="Fechar modal" />
-                </button>
+                <header>
+                    <strong>Uva que está sendo colocada no tanque</strong>
+                </header>
 
                 <form id="login" action="">     
                     
-                    <label htmlFor="">Selecione a uva</label>
-                    <input type="text" />
+                    <select required>
+                        <option value="" disabled selected>Selecione a uva...</option>
+                        <option value="1">Uva 1</option>
+                        <option value="2">Uva 2</option>
+                        <option value="3">Uva 3</option>
+                    </select>
 
                     <label htmlFor="">Quantidade</label>
                     <input type="number" />
@@ -29,9 +26,9 @@ export function ModalUva(){
                     <label htmlFor="">Data Entrada</label>
                     <input type="date" />
                 
-                    <div className="buttonFooter">
-                        <button className={styles.buttonSalvar}>Entrar</button>
-                        <button className={styles.buttonCancelar} onClick={ modalClose }>Cancelar</button>
+                    <div className={styles.buttonFooter}>
+                        <button type="submit"className={styles.buttonSalvar}>Salvar</button>
+                        <button className={styles.buttonCancelar} onClick={onClose}>Cancelar</button>
                     </div>
                 </form>
 
