@@ -1,7 +1,8 @@
-import styles from '../../styles/components/LandingHome.module.css'
+import styles from './LandingHome.module.css';
 import {Link} from 'react-router-dom';
+import React from 'react';
 
-export function LandingHome(){
+const LandingHome: React.FC = () => {
     return(
     <div className={styles.container}>
         <section>
@@ -31,3 +32,5 @@ export function LandingHome(){
     </div>
     )
 }
+
+export default LandingHome;

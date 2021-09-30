@@ -6,12 +6,12 @@ export function ModalUva({onClose = () => {}}){
 
     return(  
         <div className={styles.overlay}>
-            <div className={styles.container}>
+            <div className={styles.containerModal}>
                 <header>
-                    <strong>Uva que está sendo colocada no tanque</strong>
+                    <strong>Novo cliente</strong>
                 </header>
 
-                <form id="login" action="">     
+                <form className={styles.formModal} id="login" action="">     
                     
                     <select required>
                         <option value="" disabled selected>Selecione a uva...</option>
@@ -20,10 +20,10 @@ export function ModalUva({onClose = () => {}}){
                         <option value="3">Uva 3</option>
                     </select>
 
-                    <label htmlFor="">Quantidade</label>
+                    <label className={styles.labelModal} htmlFor="">Quantidade</label>
                     <input type="number" />
 
-                    <label htmlFor="">Data Entrada</label>
+                    <label className={styles.labelModal} htmlFor="">Data Entrada</label>
                     <input type="date" />
                 
                     <div className={styles.buttonFooter}>

@@ -1,15 +1,9 @@
 .container{
     width: 100vw;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
     position: relative;
     background-color: var(--background);
 }
@@ -19,6 +13,7 @@
     display: flex;
     color: var(--text-title);
     font-size: 3rem;
+    
 }
 
 .container section p{
@@ -34,7 +29,7 @@
 
 .container section{
     width: 80%;
-    margin: 0;
+    margin-top: -10rem;
     align-items: center;
     justify-content: center;
     text-align: center;

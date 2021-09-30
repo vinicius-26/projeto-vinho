@@ -8,16 +8,6 @@ function CardTanque(){
 
     return(
         <div className={styles.container}>
-            <div className={styles.header}>
-                <strong>Tanques disponíveis</strong>
-                <form action="">
-                    <input type="text" placeholder="Produtor" />
-                    <input type="text" placeholder="Tanque" />
-                    <input type="text" placeholder="Lote" />
-
-                    <button type="submit">Pesquisar</button>
-                </form>
-            </div>
 
             <div className={styles.content}>
 

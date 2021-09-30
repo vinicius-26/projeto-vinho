@@ -1,12 +1,19 @@
 import React from 'react';
+import CardTanque from '../../../components/Consultas/tanques/Cardtanque';
+import Pesquisar from '../../../components/Consultas/tanques/Pesquisar';
 import styles from './tanque.module.css';
 
 const Tanques: React.FC = () => {
     return(
-      
-        <section className={styles.conteudo}>
+      <html>
+          <div className={styles.container}>
+            <Pesquisar/>
+            <CardTanque />
+          </div>
           
-        </section>
+      </html>
         
       );
   }
+
+  export default Tanques;

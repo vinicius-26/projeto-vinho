@@ -1,0 +1,44 @@
+import React from 'react';
+
+import styles from '../../../styles/components/Modal-cadastro-cliente.module.css'
+
+export function ModalCadastroCliente({onClose = () => {}}){
+
+    return(  
+        <div className={styles.overlay}>
+            <div className={styles.containerModal}>
+                <header>
+                    <strong></strong>
+                </header>
+
+                <form className={styles.formModal} id="login" action=""> 
+
+                    <label className={styles.labelModal} htmlFor="">Nome do cliente</label>
+                    <input type="number" />    
+                    
+                    <select required>
+                        <option value="" disabled selected>Selecione a Região</option>
+                        <option value="1">SP</option>
+                        <option value="2">MG</option>
+                        <option value="3">RJ</option>
+                        <option value="3">Interior</option>
+                    </select>
+
+                    <label className={styles.labelModal} htmlFor="">Rua</label>
+                    <input type="text" />
+
+                    <label className={styles.labelModal} htmlFor="">Bairro</label>
+                    <input type="text" />
+
+                
+                    <div className={styles.buttonFooter}>
+                        <button type="submit"className={styles.buttonSalvar}>Salvar</button>
+                        <button className={styles.buttonCancelar} onClick={onClose}>Cancelar</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    )
+}

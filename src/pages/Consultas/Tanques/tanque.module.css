@@ -1,0 +1,17 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    margin: 0;
+    overflow: auto;
+}
+
+.container form input:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
+}
+
+.container form label{
+    font-size: 1.4rem;
+    color: var(--text);
+}
