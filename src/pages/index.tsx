@@ -9,10 +9,9 @@ import ListarClientes from '../components/Consultas/clientes/Lista'
 export default function Home() {
   return (
    <div className="container">
-     <html>
-        <NavBar/>
+     <>
         <ListarClientes/>
-     </html>
+     </>
    </div>
   )
 }

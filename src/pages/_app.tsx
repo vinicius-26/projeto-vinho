@@ -1,16 +1,16 @@
 
-import {Head} from 'next/document'
+import { NavBar } from '../components/PageHeader/NavBar'
 
 import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-   <html>
+   <div>
       <title>Projeto Vinho</title>
-      
+      <NavBar/>
       <Component {...pageProps} />
       
-    </html>
+    </div>
   )}
 
 export default MyApp
