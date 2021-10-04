@@ -1,14 +1,15 @@
 import React from 'react';
 import CardTanque from '../../../components/Consultas/tanques/Cardtanque';
-import Pesquisar from '../../../components/Consultas/tanques/Pesquisar';
+import { PesquisarTanques } from '../../../components/Consultas/tanques/PesquisarTanques';
+
 import styles from './tanque.module.css';
 
 const Tanques: React.FC = () => {
     return(
       <html>
-          <div className={styles.container}>
-            <Pesquisar/>
-            <CardTanque />
+          <div className={styles.containerTanque}>
+            <PesquisarTanques/>
+            <CardTanque/>
           </div>
           
       </html>

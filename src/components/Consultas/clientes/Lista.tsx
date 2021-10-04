@@ -2,13 +2,11 @@ import { useState } from 'react';
 import styles from '../../../styles/components/Lista-clientes.module.css'
 import { ModalCadastroCliente } from './ModalCadastroCliente';
 
-
-
-const ListarClientes: React.FC = () => {
+const ListarClientes: React.FC = () =>{
     const [isModalVisible, setIsModalVisible]= useState(false);
 
     return(
-        <div className={styles.container}>
+        <div className={styles.containerClientes}>
             <div className={styles.header}>
                 <strong>Clientes</strong>
                 <img src="img/businessman.png" alt="" />

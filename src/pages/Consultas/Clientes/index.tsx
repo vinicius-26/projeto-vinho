@@ -1,14 +1,15 @@
 import React from 'react';
 import ListarClientes from '../../../components/Consultas/clientes/Lista';
-import Pesquisar from '../../../components/Consultas/clientes/Pesquisar';
+import PesquisarClientes from '../../../components/Consultas/clientes/PesquisarClientes';
 
-import styles from './tanque.module.css';
+
+import styles from './cliente.module.css';
 
 const Clientes: React.FC = () => {
     return(
       <html>
-          <div className={styles.container}>
-            <Pesquisar/>
+          <div className={styles.containerClientes}>
+            <PesquisarClientes/>
             <ListarClientes/>
           </div>
           

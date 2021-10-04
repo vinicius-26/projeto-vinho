@@ -1,4 +1,4 @@
-.container{
+.containerTanque{
     width: 100vw;
     height: 100vh;
     display: block;
@@ -6,12 +6,12 @@
     overflow: auto;
 }
 
-.container form input:focus{
+.containerTanque form input:focus{
     border-bottom: solid 1px var(--background-primary);
     outline: 0;
 }
 
-.container form label{
+.containerTanque form label{
     font-size: 1.4rem;
     color: var(--text);
 }

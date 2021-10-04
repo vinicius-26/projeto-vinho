@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../../styles/components/Pesquisar-clientes.module.css'
 
-const PesquisarClientes: React.FC = () => {
+const PesquisarClientes: React.FC = () =>{
     return(
         <div className={styles.container}>
             <div className={styles.header}>

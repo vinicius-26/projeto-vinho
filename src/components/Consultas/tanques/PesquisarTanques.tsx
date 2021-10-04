@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styles from '../../../styles/components/Pesquisar-tanques.module.css'
 
-const Pesquisar: React.FC = () => {
+export function PesquisarTanques (){
     return(
         <div className={styles.header}>
             <strong>Tanques disponíveis</strong>
@@ -17,4 +17,3 @@ const Pesquisar: React.FC = () => {
     )
 }
 
-export default Pesquisar;

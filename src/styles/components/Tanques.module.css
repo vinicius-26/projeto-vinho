@@ -8,14 +8,15 @@
 .content main{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .content main section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     justify-content: center;
     align-items: center;
     border-right: solid 1px gray;
+    width: 28%;
 }
 
 .content main section p{
@@ -44,12 +45,28 @@
     display: block;
 }
 
-.content main section div img{
+.imgPlus{
     width: 3rem;
     display: block;
+    align-items: center;
+    text-align: center;
 }
 
 .buttonOpenModal{
     border: none;
     background: transparent;
+}
+
+.labelCard{
+    margin-top: 1.2rem;
+    display: block;
+    align-items: left;
+    justify-content: left;
+}
+
+.imgsCard{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
