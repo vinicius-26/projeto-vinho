@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import styles from '../../../styles/components/ModalUva.module.css'
+import styles from '../../../styles/components/Consultas/Tanques/ModalUva.module.css'
 
-export function ModalUva({onClose = () => {}}){
-
+export function ModalUva({onClose = () => {}}){  
+    
     return(  
         <div className={styles.overlay}>
             <div className={styles.containerModal}>
                 <header>
-                    <strong>Novo cliente</strong>
+                    <strong>Uva que está entrando no tanque</strong>
                 </header>
 
                 <form className={styles.formModal} id="login" action="">     
@@ -20,11 +20,11 @@ export function ModalUva({onClose = () => {}}){
                         <option value="3">Uva 3</option>
                     </select>
 
-                    <label className={styles.labelModal} htmlFor="">Quantidade</label>
+                    <label className={styles.labelModal} htmlFor="">Quantidade (L)</label>
                     <input type="number" />
 
                     <label className={styles.labelModal} htmlFor="">Data Entrada</label>
-                    <input type="date" />
+                    <input type="date"/>
                 
                     <div className={styles.buttonFooter}>
                         <button type="submit"className={styles.buttonSalvar}>Salvar</button>

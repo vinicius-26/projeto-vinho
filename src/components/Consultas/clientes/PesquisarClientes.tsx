@@ -1,23 +1,33 @@
-import React from 'react';
-import styles from '../../../styles/components/Pesquisar-clientes.module.css'
+import React, { useState } from 'react';
+import styles from '../../../styles/components/Consultas/Clientes/Pesquisar-clientes.module.css'
+import { ModalCadastroCliente } from './ModalCadastroCliente';
 
 const PesquisarClientes: React.FC = () =>{
+    const [isModalVisible, setIsModalVisible]= useState(false);
     return(
-        <div className={styles.container}>
+        
+        <div className={styles.containerPesquisaClientes}>
+            
             <div className={styles.header}>
-                <strong>Tanques disponíveis</strong>
+                <strong className={styles.strongClientes}>Clientes</strong>
+                <img src="img/businessman.png" alt="" />
+
+                <div className={styles.buttonCadastro}>
+                    <button className={styles.buttonNovoCadastro} onClick={() => setIsModalVisible(true)}>+ Novo Cadastro</button>
+                    {isModalVisible ? (
+                    <ModalCadastroCliente onClose={() => setIsModalVisible(false)}/>) : null}
+                </div>
             </div>
 
-            <div className={styles.pesquisarClientes}>
-                <form action="">
-                    <input type="text" placeholder="Nome-cliente" />
-                    <input type="text" placeholder="Regiao-cliente" />
-                    <input type="text" placeholder="Endereco-cliente" />
+                <div className={styles.pesquisarClientes}>
+                    <form action="">
+                        <input type="text" placeholder="Nome do cliente" />
+                        <input type="text" placeholder="Regiao" />
+                        <input type="text" placeholder="Endereço" />
 
-                    <button type="submit">Buscar clientes</button>
-                </form>
+                        <button type="submit">Buscar clientes</button>
+                    </form>
             </div>
-
         </div>
     )
 }

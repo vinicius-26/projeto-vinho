@@ -1,4 +1,4 @@
-.containerTanque{
+.containerUva{
     width: 100vw;
     height: 100vh;
     display: block;
@@ -6,12 +6,12 @@
     overflow-x: hidden;
 }
 
-.containerTanque form input:focus{
+.containerUva form input:focus{
     border-bottom: solid 1px var(--background-primary);
     outline: 0;
 }
 
-.containerTanque form label{
+.containerUva form label{
     font-size: 1.4rem;
     color: var(--text);
 }

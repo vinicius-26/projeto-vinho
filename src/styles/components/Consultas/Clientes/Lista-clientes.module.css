@@ -1,0 +1,72 @@
+.containerListaClientes{
+    width: 100%;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.containerListaClientes form input:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
+}
+
+.containerListaClientes form label{
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.listaClientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    background: var(--background-primary);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: var(--white);
+}
+
+.dadosClientes{
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    background: var(--white);
+    color: var(--text);
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    transition: 0.1s;
+}
+
+.dadosClientes:hover{
+    background: #D0CDCD;
+}
+
+.dadosClientes button{
+    height: 0.5rem;
+    width: 40%;
+    background: var(--background-button-sucess);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.1s;
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+.dadosClientes button:hover{
+    background: var(--background-button-dark);
+}
+

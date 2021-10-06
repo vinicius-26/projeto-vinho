@@ -8,7 +8,7 @@ import styles from './cliente.module.css';
 const Clientes: React.FC = () => {
     return(
       <html>
-          <div className={styles.containerClientes}>
+          <div className={styles.containerConsultaClientes}>
             <PesquisarClientes/>
             <ListarClientes/>
           </div>

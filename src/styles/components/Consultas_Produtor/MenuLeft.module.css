@@ -1,0 +1,31 @@
+.containerMenu{
+    width: 16rem;
+    height: 100vh;
+    padding: 3rem 4rem;
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--background-primary);
+}
+
+.containerMenu a{
+    width: 14rem;
+    height: 2.6rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 0.6rem;
+    transition: 0.2s;
+    font-size: 1.4rem;
+}
+
+.containerMenu a:hover{
+    color: var(--gray-line);
+}
+
+.imgVinho{
+    margin-bottom: 2rem;
+}

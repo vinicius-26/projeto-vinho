@@ -1,0 +1,243 @@
+.containerPesquisaTanques{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.strongTanques{
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.pesquisarTanques{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.pesquisarTanques form button{
+    width: 6.5rem;
+    height: 45px;
+    background: var(--green);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.pesquisarTanques form button:hover{
+    background: var(--green-dark);
+}
+
+.pesquisarTanques form{
+    width: 100%;
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.pesquisarTanques form input{
+    font-size: 0.9rem;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 0 35px;
+    border: none;
+    margin-right: 1rem;
+    color: var(--text);
+    
+}
+
+.pesquisarTanques form input:nth-child(1){
+    width: 18rem;
+}
+
+.pesquisarTanques form input:nth-child(2){
+    width: 10rem;
+}
+
+.pesquisarTanques form input:nth-child(3){
+    width: 10rem;
+}
+
+.pesquisarTanques form input:nth-child(4){
+    width: 18rem;
+}
+
+.pesquisarTanques form input:nth-child(5){
+    width: 18rem;
+}
+
+.buttonCadastro{
+    display: block;
+}
+
+.buttonNovoCadastro{
+    width: 50%;
+    justify-content: right;
+    text-align: right;
+    align-items: right;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+@media(max-width: 1000px){
+    .containerPesquisaTanques{
+        font-size: 0.8rem;
+        
+    }
+    .pesquisarTanques form button{
+        width: 5rem;
+        font-size: 0.9rem;
+        margin-right: 2rem;
+
+    }
+    .pesquisarTanques form input:nth-child(1){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(2){
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(3){
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(4){
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(5){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .strongTanques{
+        font-size: 1.2rem;
+    }
+    .buttonNovoCadastro{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 760px){ 
+    .containerPesquisaTanques{
+        font-size: 1rem;
+        
+    }
+    .pesquisarTanques form{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .pesquisarTanques form button{
+        width: 10rem;
+        font-size: 0.9rem;
+        margin-right: 2rem;
+    }
+    .pesquisarTanques form input:nth-child(1){
+        width: 10rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .pesquisarTanques form input:nth-child(2){
+        width: 10rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .pesquisarTanques form input:nth-child(3){
+        width: 10rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .pesquisarTanques form input:nth-child(4){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(5){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .strongTanques{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .buttonNovoCadastro{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+} 
+
+@media(max-width: 400px){
+    .containerPesquisaTanques{
+        font-size: 0.8rem;
+        
+    }
+    .pesquisarTanques form button{
+        width: 10rem;
+        font-size: 0.9rem;
+        margin-right: 2rem;
+
+    }
+    .pesquisarTanques form input:nth-child(1){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(2){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(3){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(4){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(5){
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+    .strongTanques{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .buttonNovoCadastro{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+
+
+

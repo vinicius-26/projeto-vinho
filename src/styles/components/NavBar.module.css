@@ -5,6 +5,7 @@
     padding: 0.8rem;
     display: flex;
     font-size: 1.4rem;
+    justify-content: right;
 }
 
 .navbar a{
@@ -16,4 +17,28 @@
 .navbar a:hover{
     color: var(--gray-line);
     
+}
+
+@media(max-width: 1000px){
+    .navbar{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1000px){
+    .navbar{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 600px){
+    .navbar{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 600px){
+    .navbar{
+        font-size: 0.6rem;
+    }
 }

@@ -1,0 +1,145 @@
+.overlay{
+    background: rgba(242, 243, 245, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.containerModal{
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem 3rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.containerModal p{
+    font-size: 1.25rem;
+    color: var(--text);
+    margin-top: 0.25rem;
+}
+
+.strongCadastrar{
+    font-size: 2rem;
+    color: var(--title);
+    width: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonSalvar{
+    width: 30%;
+    height: 2.6rem;
+    background: var(--green);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+    margin-left: 1rem;
+}
+
+.buttonSalvar:hover{
+    background: var(--green-dark);
+}
+
+.buttonCancelar{
+    width: 50%;
+    height: 2.6rem;
+    background: var(--red);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+    margin-right: 0.6rem;
+}
+
+.buttonCancelar:hover{
+    background: var(--background-primary);
+}
+
+.formModal{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.formModal input{
+    font-size: 15px;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: #ebebeb;
+    border-radius: 10px;
+    padding: 0 35px;
+    border: none;
+    
+}
+
+.formModal input:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
+}
+
+.labelModal{
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.formModal select{
+    width: 100%;
+    height: 55px;
+    border-radius: 0.4rem;
+    background: #ebebeb;
+    font-size: 1rem;
+    color: var(--text);
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding: 0 1.5rem;
+    margin-top: 2.2rem;
+}
+
+.formModal select:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
+}
+
+.formModal select:invalid{
+    color: gray;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}

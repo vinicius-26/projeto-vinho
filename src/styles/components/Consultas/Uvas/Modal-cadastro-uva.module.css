@@ -10,23 +10,31 @@
     align-items: center;
 }
 
+
 .containerModal{
     background: var(--white);
     width: 100%;
-    height: 20rem;
-    box-sizing: border-box;
     max-width: 400px;
     padding: 2rem 3rem;
     border-radius: 1.6rem;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
 }
 
 .containerModal p{
     font-size: 1.25rem;
     color: var(--text);
     margin-top: 0.25rem;
+}
+
+.strongCadastrar{
+    font-size: 2rem;
+    color: var(--title);
+    width: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .buttonFooter{
@@ -82,6 +90,9 @@
 .formModal{
     width: 100%;
     position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .formModal input{
@@ -106,22 +117,6 @@
 .labelModal{
     font-size: 1.4rem;
     color: var(--text);
-    margin-right: 3rem;
-}
-
-.containerModal header {
-    font-size: 8.75;
-    font-weight: 600;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.containerModal strong{
-    font-size: 1.4rem;
-    color: var(--title);
 }
 
 .formModal select{
@@ -135,6 +130,12 @@
     box-sizing: border-box;
     border: none;
     padding: 0 1.5rem;
+    margin-top: 2.2rem;
+}
+
+.formModal select:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
 }
 
 .formModal select:invalid{

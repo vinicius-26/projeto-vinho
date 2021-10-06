@@ -1,32 +1,12 @@
-import { useState } from 'react';
-import styles from '../../../styles/components/Lista-clientes.module.css'
-import { ModalCadastroCliente } from './ModalCadastroCliente';
+
+import styles from '../../../styles/components/Consultas/Clientes/Lista-clientes.module.css'
+
 
 const ListarClientes: React.FC = () =>{
-    const [isModalVisible, setIsModalVisible]= useState(false);
-
+    
     return(
-        <div className={styles.containerClientes}>
-            <div className={styles.header}>
-                <strong>Clientes</strong>
-                <img src="img/businessman.png" alt="" />
-
-                <button onClick={() => setIsModalVisible(true)}>+ Novo Cadastro</button>
-                {isModalVisible ? (
-                <ModalCadastroCliente onClose={() => setIsModalVisible(false)}/>) : null}
-
-            </div>
-
-            <div className={styles.pesquisarClientes}>
-                <form action="">
-                    <input type="text" placeholder="Nome do cliente" />
-                    <input type="text" placeholder="Regiao" />
-                    <input type="text" placeholder="Endereço" />
-
-                    <button type="submit">Buscar clientes</button>
-                </form>
-            </div>
-
+        <div className={styles.containerListaClientes}>
+            
             <div className={styles.listaClientes}>
                 <p>Nome</p>
                 <p>Região</p>
@@ -35,12 +15,35 @@ const ListarClientes: React.FC = () =>{
             </div>
 
             <div className={styles.dadosClientes}>
-                <p>Valor_nome</p>
-                <p>Valor_região</p>
-                <p>Valor_endereço</p>
-                <p>Valor_contato</p>
+                <p>Valor_nome1</p>
+                <p>Valor_região1</p>
+                <p>Valor_endereço1</p>
+                <p>Valor_contato1</p>
                 <button>Detalhar...</button>
+            </div>
 
+            <div className={styles.dadosClientes}>
+                <p>Valor_nome2</p>
+                <p>Valor_região2</p>
+                <p>Valor_endereço2</p>
+                <p>Valor_contato2</p>
+                <button>Detalhar...</button>
+            </div>
+
+            <div className={styles.dadosClientes}>
+                <p>Valor_nome3</p>
+                <p>Valor_região3</p>
+                <p>Valor_endereço3</p>
+                <p>Valor_contato3</p>
+                <button>Detalhar...</button>
+            </div>
+
+            <div className={styles.dadosClientes}>
+                <p>Valor_nome4</p>
+                <p>Valor_região4</p>
+                <p>Valor_endereço4</p>
+                <p>Valor_contato4</p>
+                <button>Detalhar...</button>
             </div>
 
         </div>

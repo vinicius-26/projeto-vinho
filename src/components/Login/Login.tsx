@@ -1,4 +1,4 @@
-import styles from '../../styles/components/Login.module.css'
+import styles from '../../styles/components/Login/Login.module.css'
 
 export function LoginUsuario(){
     return(

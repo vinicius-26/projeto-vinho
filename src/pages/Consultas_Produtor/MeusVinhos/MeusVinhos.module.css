@@ -1,0 +1,13 @@
+.containerConsultaVinhos{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.menuLeft{
+    width: 22%;
+}
+
+.content{
+    width: 74%;
+}

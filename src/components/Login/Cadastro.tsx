@@ -1,4 +1,4 @@
-import styles from '../../styles/components/Cadastro.module.css'
+import styles from '../../styles/components/Login/Cadastro.module.css'
 
 export function CadastroUsuario(){
     return(
