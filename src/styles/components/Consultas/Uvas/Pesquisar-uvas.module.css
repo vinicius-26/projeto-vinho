@@ -48,6 +48,8 @@
     margin-left: 3rem;
     margin-right: 2rem;
     padding: 1rem;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .pesquisarUvas form button:hover{
@@ -72,7 +74,7 @@
     padding: 0 35px;
     border: none;
     margin-right: 1rem;
-    
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .pesquisarUvas form input:nth-child(1){

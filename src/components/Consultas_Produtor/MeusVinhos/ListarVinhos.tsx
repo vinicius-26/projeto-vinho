@@ -1,5 +1,6 @@
 import styles from '../../../styles/components/Consultas_Produtor/MeusVinhos/Lista-Vinhos.module.css'
-
+import Link from 'next/link';
+import React from 'react';
 
 const ListarVinhos: React.FC = () =>{
     
@@ -22,7 +23,7 @@ const ListarVinhos: React.FC = () =>{
                 <p>06/10/2021</p>
                 <p>Valor_status1</p>
                 <p>Valor_finalizado1</p>
-                <button>Detalhar...</button>
+                <Link href="/Consultas_Produtor/MeusVinhos/DetalhesVinho"><button>Detalhar...</button></Link>
             </div>
 
             <div className={styles.dadosVinhos}>
@@ -32,7 +33,7 @@ const ListarVinhos: React.FC = () =>{
                 <p>06/10/2021</p>
                 <p>Valor_status2</p>
                 <p>Valor_finalizado2</p>
-                <button>Detalhar...</button>
+                <Link href="/Consultas_Produtor/MeusVinhos/DetalhesVinho"><button>Detalhar...</button></Link>
             </div>
 
             <div className={styles.dadosVinhos}>
@@ -42,7 +43,7 @@ const ListarVinhos: React.FC = () =>{
                 <p>06/10/2021</p>
                 <p>Valor_status3</p>
                 <p>Valor_finalizado3</p>
-                <button>Detalhar...</button>
+                <Link href="/Consultas_Produtor/MeusVinhos/DetalhesVinho"><button>Detalhar...</button></Link>
             </div>
 
             <div className={styles.dadosVinhos}>
@@ -52,7 +53,7 @@ const ListarVinhos: React.FC = () =>{
                 <p>06/10/2021</p>
                 <p>Valor_status4</p>
                 <p>Valor_finalizado4</p>
-                <button>Detalhar...</button>
+                <Link href="/Consultas_Produtor/MeusVinhos/DetalhesVinho"><button>Detalhar...</button></Link>
             </div>
 
             

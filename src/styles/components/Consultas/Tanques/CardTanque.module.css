@@ -122,25 +122,35 @@
     width: 5rem;
 }
 
+@media(max-width: 1500px){
+    .content main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .imgPlus{
+        width: 2rem;
+    }
+    .imgsCard p{
+        font-size: 1.6rem;
+
+    }
+}
 
 @media(max-width: 1360px){
     .content main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .content main section img{
-
-    }
     .imgPlus{
         width: 2rem;
     }
     .imgsCard p{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
 
     }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1300px){
     .content main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -149,7 +159,7 @@
         width: 2rem;
     }
     .imgsCard p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
     }
 }

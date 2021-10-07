@@ -4,8 +4,9 @@
     color: var(--white);
     padding: 0.8rem;
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     justify-content: right;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a{

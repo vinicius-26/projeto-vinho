@@ -48,6 +48,8 @@
     transition: background-color 0.2s;
     margin-right: 2rem;
     padding: 1rem;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .pesquisarTanques form button:hover{
@@ -73,6 +75,7 @@
     border: none;
     margin-right: 1rem;
     color: var(--text);
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -110,6 +113,84 @@
     color: var(--text);
     font-size: 2rem;
 }
+
+@media(max-width: 1500px){
+    .containerPesquisaTanques{
+        font-size: 0.8rem;
+        
+    }
+    .pesquisarTanques form button{
+        width: 8rem;
+        font-size: 0.9rem;
+        margin-right: 2rem;
+
+    }
+    .pesquisarTanques form input:nth-child(1){
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(2){
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(3){
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(4){
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .pesquisarTanques form input:nth-child(5){
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+    .strongTanques{
+        font-size: 1.2rem;
+    }
+    .buttonNovoCadastro{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 1300px){ 
+    .pesquisarTanques form button{
+        width: 10rem;
+        font-size: 0.9rem;
+        margin-right: 2rem;
+    }
+    .pesquisarTanques form input:nth-child(1){
+        width: 8rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .pesquisarTanques form input:nth-child(2){
+        width: 8rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .pesquisarTanques form input:nth-child(3){
+        width: 8rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .pesquisarTanques form input:nth-child(4){
+        width: 8rem;
+        font-size: 1rem;
+    }
+    .pesquisarTanques form input:nth-child(5){
+        width: 12rem;
+        font-size: 1rem;
+    }
+    .strongTanques{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .buttonNovoCadastro{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+} 
 
 @media(max-width: 1000px){
     .containerPesquisaTanques{
