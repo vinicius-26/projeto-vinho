@@ -15,7 +15,12 @@ const CardTanque: React.FC = () =>{
     return(
         <div className={styles.container}>
             <div className={styles.content}>
+
+        {isModalVisible ? (
+        <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
+        
                 <main>
+                                
                     <section>   
                         <div className={styles.imgsCard}>
                             <p>Tanque 01</p>
@@ -23,8 +28,7 @@ const CardTanque: React.FC = () =>{
 
                             <div className={styles.imgPlus}>
                                 <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <Image width={300} height={300} src={imgPlus} alt="Imagem tanque" objectFit="contain"/> </button>
-                                {isModalVisible ? (
-                                <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
+                                
                             </div>
                         </div> 
                     
@@ -64,8 +68,6 @@ const CardTanque: React.FC = () =>{
 
                             <div className={styles.imgPlus}>
                                 <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <Image width={300} height={300} src={imgPlus} alt="Imagem tanque" objectFit="contain"/> </button>
-                                {isModalVisible ? (
-                                <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
                             </div>
                         </div> 
                     
@@ -105,8 +107,6 @@ const CardTanque: React.FC = () =>{
 
                             <div className={styles.imgPlus}>
                                 <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <Image width={300} height={300} src={imgPlus} alt="Imagem tanque" objectFit="contain"/> </button>
-                                {isModalVisible ? (
-                                <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
                             </div>
                         </div> 
                     
@@ -146,8 +146,6 @@ const CardTanque: React.FC = () =>{
 
                             <div className={styles.imgPlus}>
                                 <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <Image width={300} height={300} src={imgPlus} alt="Imagem tanque" objectFit="contain"/> </button>
-                                {isModalVisible ? (
-                                <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
                             </div>
                         </div> 
                     
@@ -187,8 +185,6 @@ const CardTanque: React.FC = () =>{
 
                             <div className={styles.imgPlus}>
                                 <button className={styles.buttonOpenModal} onClick={() => setIsModalVisible(true)}> <Image width={300} height={300} src={imgPlus} alt="Imagem tanque" objectFit="contain"/> </button>
-                                {isModalVisible ? (
-                                <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
                             </div>
                         </div> 
                     

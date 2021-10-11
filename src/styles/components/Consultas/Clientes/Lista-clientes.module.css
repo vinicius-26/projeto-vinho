@@ -6,11 +6,6 @@
     padding: 2rem;
 }
 
-.containerListaClientes form input:focus{
-    border-bottom: solid 1px var(--background-primary);
-    outline: 0;
-}
-
 .containerListaClientes form label{
     font-size: 1.4rem;
     color: var(--text);
@@ -70,3 +65,23 @@
     background: var(--background-button-dark);
 }
 
+@media(max-width: 1500px){
+    .containerListaClientes form label{
+        font-size: 1rem;
+        
+    }
+    .listaClientes{
+        font-size: 1rem;
+    }
+    .dadosClientes button{
+        font-size: 0.7rem;
+        width: 40%;
+    }
+}
+
+
+@media(max-width: 760px){
+    .dadosClientes p{
+        font-size: 0.8rem;
+    }
+}

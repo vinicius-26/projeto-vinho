@@ -7,6 +7,7 @@
     font-size: 1.2rem;
     justify-content: right;
     box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .navbar a{

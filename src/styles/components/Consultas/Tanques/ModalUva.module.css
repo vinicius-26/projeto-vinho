@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .containerModal{
@@ -18,7 +19,6 @@
     border-radius: 1.6rem;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
     text-align: center;
-    position: relative;
 }
 
 .containerModal p{
@@ -133,6 +133,11 @@
     box-sizing: border-box;
     border: none;
     padding: 0 1.5rem;
+}
+
+.formModal select:focus{
+    border-bottom: solid 1px var(--background-primary);
+    outline: 0;
 }
 
 .formModal select:invalid{
