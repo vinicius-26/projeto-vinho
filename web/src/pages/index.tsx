@@ -9,7 +9,7 @@ import imgTank from '../../public/img/tank.png'
 import imgCliente from '../../public/img/businessman.png'
 import imgVinho from '../../public/img/mywine.png'
 
-
+//index do projeto
 const LandingHome: React.FC = () => {
     return(
     <div className={styles.container}>
