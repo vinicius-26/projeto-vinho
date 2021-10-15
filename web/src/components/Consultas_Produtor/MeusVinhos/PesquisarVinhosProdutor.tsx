@@ -8,7 +8,6 @@ const PesquisarVinhosProdutor: React.FC = () =>{
             
             <div className={styles.header}>
                 <strong className={styles.strongVinhos}>Meus Vinhos</strong>
-                <img src="img/uva.png" alt="" />
             </div>
 
                 <div className={styles.pesquisarVinhos}>
