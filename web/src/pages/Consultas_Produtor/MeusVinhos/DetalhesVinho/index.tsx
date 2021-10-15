@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuLeft } from '../../../../components/Consultas_Produtor/MenuLeft';
+import DetalhesVinhoComponent from '../../../../components/Consultas_Produtor/MeusVinhos/DetalhesVinho/DetalhesVinho';
 
 
 import styles from './DetalhesVinho.module.css';
@@ -13,7 +14,7 @@ const DetalhesVinho: React.FC = () => {
             </div>
 
             <div className={styles.content}>
-              <DetalhesVinho/>
+              <DetalhesVinhoComponent/>
             </div>
             
           </div>

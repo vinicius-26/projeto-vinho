@@ -14,7 +14,7 @@ export function ModalCadastroTanque({onClose = () => {}}){
                 <form className={styles.formModal} id="cadastro-cliente" action=""> 
 
                     <label className={styles.labelModal} htmlFor="">Nº Tanque</label>
-                    <input type="text" value={1} disabled/>    
+                    {/* <input type="number"/>    
                     
                     <select required>
                         <option value="" disabled selected>Capacidade</option>
@@ -29,8 +29,15 @@ export function ModalCadastroTanque({onClose = () => {}}){
                         <option value="" disabled selected>Tipo</option>
                         <option value="1">Fermentação</option>
                         <option value="2">Estabilização</option>
-                    </select>
+                    </select> */}
 
+                    <input type="number"/>
+
+                    <label className={styles.labelModal} htmlFor="">Capacidade (L)</label>
+                    <input type="number"/>
+
+                    <label className={styles.labelModal} htmlFor="">Tipo</label>
+                    <input type="text"/>
                 
                     <div className={styles.buttonFooter}>
                         <button type="submit"className={styles.buttonSalvar}>Salvar</button>

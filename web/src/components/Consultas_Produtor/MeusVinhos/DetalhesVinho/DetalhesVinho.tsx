@@ -2,11 +2,11 @@ import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react';
 
-import imgCheck from '../../../../public/img/check.png'
+import imgCheck from '../../../../../public/img/check.png'
 
-import styles from '../../../styles/components/Consultas_Produtor/MeusVinhos/DetalhesVinho/Detalhes-Vinhos.module.css'
+import styles from '../../../../styles/components/Consultas_Produtor/MeusVinhos/DetalhesVinhos/Detalhes-Vinhos.module.css'
 
-const DetalhesVinho: React.FC = () =>{
+const DetalhesVinhoComponent: React.FC = () =>{
     
     return(
         <div className={styles.containerDetalhesVinhos}>
@@ -33,4 +33,4 @@ const DetalhesVinho: React.FC = () =>{
     )
 }
 
-export default DetalhesVinho;
+export default DetalhesVinhoComponent;

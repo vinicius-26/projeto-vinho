@@ -7,9 +7,9 @@ export function NavBar(){
 
         <Link href="/"><a>HOME</a></Link>
 
-        <a href="">CADASTRO DE UVAS</a>
+        <a href="">UVAS</a>
 
-        <a href="">CADASTRO DE TANQUES</a>
+        <Link href="/Consultas/Tanques"><a >TANQUES</a></Link>
 
         <a href="">CONSULTAS</a>
 
