@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from '../../../styles/components/Consultas/Tanques/Modal-cadastro-tanque.module.css'
 
+
 export function ModalCadastroTanque({onClose = () => {}}){
 
     return(  
