@@ -1,7 +1,5 @@
 .containerTanque{
-    width: 100vw;
-    height: 100vh;
-    display: block;
+    max-width: 100%;
     margin: 0;
     overflow-x: hidden;
 }
@@ -15,3 +13,39 @@
     font-size: 1.4rem;
     color: var(--text);
 }
+
+.tanques{
+    display: grid;
+    grid-template-columns: 27rem 27rem 27rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 1900px){
+    .tanques{
+        width: 100vw;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1200px){
+    .tanques{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 760px){
+    .tanques{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 8rem;
+    }
+}
+@media(max-width: 480px){
+    .tanques{
+        margin: 0;
+    }
+}
+

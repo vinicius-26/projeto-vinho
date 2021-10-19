@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';
+import cors from 'cors'
 import routes from './routes';
 import mongoose from 'mongoose'
 import swaggerUI from 'swagger-ui-express';
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
     next();
 })
 
-const port = process.env.PORT_WWW_APP || 3000
+const port = process.env.PORT_WWW_APP || 3333
 app.listen(port, () => {
     console.log('Servidor Rodando na porta ' + port + '...')
 })

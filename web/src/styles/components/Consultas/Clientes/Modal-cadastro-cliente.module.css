@@ -10,27 +10,19 @@
     align-items: center;
 }
 
-
 .containerModal{
     background: var(--white);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     padding: 2rem 3rem;
     border-radius: 1.6rem;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-}
-
-.containerModal p{
-    font-size: 1.25rem;
-    color: var(--text);
-    margin-top: 0.25rem;
+    align-items: left;
+    justify-content: left;
 }
 
 .strongCadastrar{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--title);
     width: auto;
     justify-content: center;
@@ -44,7 +36,7 @@
 }
 
 .buttonSalvar{
-    width: 30%;
+    width: 35%;
     height: 2.6rem;
     background: var(--green);
     color: var(--white);
@@ -58,7 +50,7 @@
     text-decoration: none;
     transition: background-color 0.2s;
     margin-top: 3.2rem;
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .buttonSalvar:hover{
@@ -66,7 +58,7 @@
 }
 
 .buttonCancelar{
-    width: 50%;
+    width: 30%;
     height: 2.6rem;
     background: var(--red);
     color: var(--white);
@@ -80,7 +72,7 @@
     text-decoration: none;
     transition: background-color 0.2s;
     margin-top: 3.2rem;
-    margin-right: 0.6rem;
+    margin-right: 4rem;
 }
 
 .buttonCancelar:hover{
@@ -90,8 +82,8 @@
 .formModal{
     width: 100%;
     position: relative;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     margin-top: 2rem;
 }
 
@@ -101,7 +93,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 55px;
+    height: 50px;
     background: #ebebeb;
     border-radius: 10px;
     padding: 0 35px;
@@ -115,8 +107,9 @@
 }
 
 .labelModal{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     color: var(--text);
+    margin-left: 1rem;
 }
 
 .formModal select{
@@ -130,7 +123,7 @@
     box-sizing: border-box;
     border: none;
     padding: 0 1.5rem;
-    margin-top: 2.2rem;
+    margin-top: 0.2rem;
 }
 
 .formModal select:focus{
@@ -142,4 +135,48 @@
     color: gray;
     font-size: 1rem;
     padding-left: 0.6rem;
+}
+
+.ruaNumero{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1rem;
+}
+
+.ruaNumero :nth-child(1){
+    width: 100%;
+}
+
+.ruaNumero :nth-child(2){
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.ruaNumero :nth-child(3){
+    width: 100%;
+}
+.ruaNumero :nth-child(4){
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.telEmail{
+    display: grid;
+    grid-template-columns: 12.5rem 19.9rem;
+    margin-top: 1rem;
+}
+
+.telEmail :nth-child(1){
+    width: 100%;
+}
+
+.telEmail :nth-child(2){
+    width: 100%;
+}
+
+.telEmail :nth-child(3){
+    width: 85%;
+}
+.telEmail :nth-child(4){
+    width: 95%;
 }

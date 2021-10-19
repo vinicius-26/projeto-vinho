@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("../models/tanques")
 const Tanque = mongoose.model("tanques");
-class TanqueControlle {
+class TanqueController {
 
   async create(req, res) {
     const newTanque = {
@@ -21,11 +21,11 @@ class TanqueControlle {
   } 
 
   async index(req, res) {
-    User.find().then(userFind => {
-      return res.status(200).json(userFind)
+      Tanque.find().then(tanqueFind => {
+      return res.status(200).json(tanqueFind)
     })
   }
 
 }
 
-module.exports = TanqueControlle;
+module.exports = TanqueController;

@@ -21,7 +21,7 @@ export function PesquisarTanques (){
                 <form action="">
                     <input type="text" placeholder="Produtor" />
                     <input type="number" placeholder="Tanque" />
-                    <input type="text" placeholder="Lote" />
+                    <input type="text" placeholder="Tipo" />
                     <input type="text" placeholder="Vinho" />
                     <input type="date"/>
 

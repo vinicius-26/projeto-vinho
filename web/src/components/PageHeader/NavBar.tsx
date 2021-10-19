@@ -7,11 +7,11 @@ export function NavBar(){
 
         <Link href="/"><a>HOME</a></Link>
 
-        <a href="">UVAS</a>
+        <Link href="/Consultas/Uvas"><a >UVAS</a></Link>
 
         <Link href="/Consultas/Tanques"><a >TANQUES</a></Link>
 
-        <a href="">CONSULTAS</a>
+        <Link href="/"><a >CONSULTAS</a></Link>
 
     </div>
     )
