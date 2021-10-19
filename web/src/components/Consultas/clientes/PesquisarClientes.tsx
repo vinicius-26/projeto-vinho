@@ -28,6 +28,14 @@ const PesquisarClientes: React.FC = () =>{
                         <button type="submit">Buscar clientes</button>
                     </form>
             </div>
+
+            <div className={styles.listaClientes}>
+                <p>Nome</p>
+                <p>Região</p>
+                <p>Endereço</p>
+                <p>Telefone</p>
+                <p>Email</p>
+            </div>
         </div>
     )
 }

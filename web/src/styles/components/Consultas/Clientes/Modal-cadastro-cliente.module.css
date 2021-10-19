@@ -98,7 +98,7 @@
     border-radius: 10px;
     padding: 0 35px;
     border: none;
-    
+    color: var(--text)
 }
 
 .formModal input:focus{
