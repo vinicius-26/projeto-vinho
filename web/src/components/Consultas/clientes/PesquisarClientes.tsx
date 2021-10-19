@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from '../../../styles/components/Consultas/Clientes/Pesquisar-clientes.module.css'
 import { ModalCadastroCliente } from './ModalCadastroCliente';
+import Image from 'next/image'
+
+import imgCliente from '../../../../public/img/businessman.png'
 
 const PesquisarClientes: React.FC = () =>{
     const [isModalVisible, setIsModalVisible]= useState(false);
@@ -9,9 +12,9 @@ const PesquisarClientes: React.FC = () =>{
         <div className={styles.containerPesquisaClientes}>
             
             <div className={styles.header}>
+                <Image width={1000} height={1000} src={imgCliente} alt="Imagem cliente" objectFit="contain"/>
                 <strong className={styles.strongClientes}>Clientes</strong>
-                <img src="img/businessman.png" alt="" />
-
+                
                 <div className={styles.buttonCadastro}>
                     <button className={styles.buttonNovoCadastro} onClick={() => setIsModalVisible(true)}>+ Novo Cadastro</button>
                     {isModalVisible ? (

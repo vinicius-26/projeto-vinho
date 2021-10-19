@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .containerModal{
@@ -43,7 +44,7 @@
 }
 
 .buttonSalvar{
-    width: 30%;
+    width: 45%;
     height: 2.6rem;
     background: var(--green);
     color: var(--white);
@@ -57,7 +58,6 @@
     text-decoration: none;
     transition: background-color 0.2s;
     margin-top: 3.2rem;
-    margin-left: 1rem;
 }
 
 .buttonSalvar:hover{
@@ -65,7 +65,7 @@
 }
 
 .buttonCancelar{
-    width: 50%;
+    width: 40%;
     height: 2.6rem;
     background: var(--red);
     color: var(--white);
@@ -79,7 +79,6 @@
     text-decoration: none;
     transition: background-color 0.2s;
     margin-top: 3.2rem;
-    margin-right: 0.6rem;
 }
 
 .buttonCancelar:hover{
@@ -90,7 +89,7 @@
     width: 100%;
     position: relative;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin-top: 2rem;
 }
 
@@ -105,7 +104,7 @@
     border-radius: 10px;
     padding: 0 35px;
     border: none;
-    
+    color: var(--text);
 }
 
 .formModal input:focus{
@@ -116,6 +115,7 @@
 .labelModal{
     font-size: 1.4rem;
     color: var(--text);
+    margin-left: 1rem;
 }
 
 .formModal select{
@@ -129,7 +129,6 @@
     box-sizing: border-box;
     border: none;
     padding: 0 1.5rem;
-    margin-top: 2.2rem;
 }
 
 .formModal select:focus{

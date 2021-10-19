@@ -7,6 +7,7 @@ import api from '../../../services/api'
 import styles from '../../../styles/components/Consultas/Tanques/Modal-cadastro-tanque.module.css'
 
 export interface CreateTanqueProps{
+  id: number,
   numero: number,
   capacidade: number,
   tipo: string,
@@ -49,7 +50,7 @@ export function ModalCadastroTanque({onClose = () => {}}){
           <label className={styles.labelModal} htmlFor="">Nº Tanque</label>
           <input type="number" id="numero" name="numero" onChange={(e) => {setNumero(e.target.value)}}/>   
           
-          <select required name="capacidade" id="capacidade" onChange={(e) => {setCapacidade(e.target.value)}}>
+          <select defaultValue="" required name="capacidade" id="capacidade" onChange={(e) => {setCapacidade(e.target.value)}}>
             <option value="" disabled selected>Capacidade</option>
             <option value="350">350L</option>
             <option value="500">500L</option>

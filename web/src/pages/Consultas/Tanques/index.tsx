@@ -7,8 +7,7 @@ import styles from './tanque.module.css';
 
 const TanquesList = (props) => {
     return(
-      <html>
-
+      <div>
           <div className={styles.containerTanque}>
             <PesquisarTanques/>
             <div className={styles.tanques}>
@@ -18,7 +17,7 @@ const TanquesList = (props) => {
             </div>
           </div>   
           
-      </html>   
+      </div>   
       );
   }
 

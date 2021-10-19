@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import styles from '../../../styles/components/Consultas/Uvas/Pesquisar-uvas.module.css'
-import { ModalCadastroUva } from './ModalCadastroUva';
+import ModalCadastroUva from './ModalCadastroUva';
 
 export function PesquisarUvas (){
     const [isModalVisible, setIsModalVisible]= useState(false);
