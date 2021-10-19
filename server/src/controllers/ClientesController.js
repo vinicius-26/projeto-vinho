@@ -1,7 +1,7 @@
 const express = require("express");
 
 const mongoose = require("mongoose");
-require("../models/tanques")
+require("../models/clientes")
 const Cliente = mongoose.model("clientes");
 class ClienteController {
 
