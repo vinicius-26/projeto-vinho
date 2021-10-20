@@ -12,9 +12,9 @@ export interface Clientes{
     regiao: string,
 }
   
-    export interface CardClientesProps {
-        clientes: Clientes;
-    }
+export interface CardClientesProps {
+    clientes: Clientes;
+}
 
 const ListarClientes: React.FC<CardClientesProps> = ({clientes}) =>{    
     return(
@@ -32,15 +32,5 @@ const ListarClientes: React.FC<CardClientesProps> = ({clientes}) =>{
         </div>
     )
 }
-
-export async function getServerSideProps() {
-    
-    // Fetch data from external API
-    const res = await fetch(`https://localhost:3333/data`)
-    const data = await res.json()
-  
-    // Pass data to the page via props
-    return { props: { data } }
-  }
 
 export default ListarClientes;

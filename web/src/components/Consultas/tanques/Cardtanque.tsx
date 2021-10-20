@@ -11,21 +11,21 @@ import imgCheck from '../../../../public/img/check.png'
 import api from '../../../services/api'
 
   export interface Tanques{
-  id: number,
-  numero: number,
-  capacidade: number,
-  tipo: string
+    id: number,
+    numero: number,
+    capacidade: number,
+    tipo: string
   }
 
   export interface CardTanqueProps {
-      tanques: Tanques;
+    tanques: Tanques,
   }
 
 const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
-  
   const [isModalVisible, setIsModalVisible]= useState(false);
 
   return(
+
     <div className={styles.container}>
       <div className={styles.content}>
 
@@ -78,15 +78,6 @@ const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
       </div>
     </div>
   )
-}
-
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(`https://localhost:3333/data`)
-  const data = await res.json()
-
-  // Pass data to the page via props
-  return { props: { data } }
 }
 
 export default CardTanque;

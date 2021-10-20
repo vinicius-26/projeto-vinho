@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react';
 import styles from '../../../styles/components/Consultas/Uvas/Pesquisar-uvas.module.css'
 import ModalCadastroUva from './ModalCadastroUva';
 
-export function PesquisarUvas (){
+
+const PesquisarUvas: React.FC = (props) => {
     const [isModalVisible, setIsModalVisible]= useState(false);
     return(
         <div className={styles.containerPesquisaUvas}>
@@ -23,9 +24,14 @@ export function PesquisarUvas (){
                     <input type="number" placeholder="Nº Tanque" />
                     <input type="text" placeholder="Lote" />
 
+                    
+
                     <button type="submit">Pesquisar</button>
                 </form>
             </div>
         </div>
     )
 }
+
+
+export default PesquisarUvas;

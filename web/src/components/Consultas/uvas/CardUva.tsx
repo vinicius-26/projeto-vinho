@@ -5,6 +5,7 @@ import styles from '../../../styles/components/Consultas/Uvas/CardUva.module.css
 
 import imgFermentation from '../../../../public/img/fermentation.png'
 import imgUva from '../../../../public/img/uva.png'
+import { CardTanqueProps, Tanques } from '../tanques/Cardtanque';
 
 const CardUva: React.FC = () =>{
     return(

@@ -10,7 +10,15 @@ const TanquesList = (props) => {
       <div>
           <div className={styles.containerTanque}>
             <PesquisarTanques/>
+
+            <select name="" id="">
+              {props.tanques.map((tanques: Tanques) => {
+                  return <option key={tanques.id}>{tanques.numero}</option>
+              })}    
+            </select>
+
             <div className={styles.tanques}>
+            
               {props.tanques.map((tanques: Tanques) => {
                 return <CardTanque key={tanques.id} tanques={tanques}/>
               })}     
