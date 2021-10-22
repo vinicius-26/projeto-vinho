@@ -15,3 +15,11 @@
     font-size: 1.4rem;
     color: var(--text);
 }
+
+.uvas{
+    display: grid;
+    grid-template-columns: 27rem 27rem 27rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}

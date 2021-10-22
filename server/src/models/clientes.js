@@ -9,6 +9,6 @@ const ClienteSchema = new Schema({
   numend: { type: Number, required: true },
   bairro: { type: String, required: true },
   regiao: { type: String, required: true },
- 
+  date: {type: Date, default: Date.now()}
 });
 mongoose.model('clientes', ClienteSchema);

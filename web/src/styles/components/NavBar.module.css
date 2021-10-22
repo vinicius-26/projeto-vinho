@@ -8,6 +8,7 @@
     justify-content: right;
     box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
     position: relative;
+    align-items: center;
 }
 
 .navbar a{
@@ -18,7 +19,30 @@
 
 .navbar a:hover{
     color: var(--gray-line);
-    
+}
+
+.navbar button{
+    width: 5%;
+    height: 8px;
+    background: var(--background-button-sucess);
+    color: var(--white);
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button:hover{
+    background: var(--background-button-dark);
 }
 
 @media(max-width: 1000px){

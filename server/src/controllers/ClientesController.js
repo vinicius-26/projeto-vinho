@@ -25,7 +25,7 @@ class ClienteController {
   } 
 
   async index(req, res) {
-      Cliente.find().then(clienteFind => {
+      Cliente.find().sort({date: ('desc')}).then(clienteFind => {
       return res.status(200).json(clienteFind)
     })
   }

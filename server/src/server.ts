@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json());
 app.use(routes);
 
+
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 
 
@@ -25,10 +26,10 @@ mongoose
         console.log("Erro ao Conectar com o Banco de Dados : " + erro);
     });
 
-
 app.use((req, res, next) => {
-    next();
-})
+    res.send(console.log("OI EU SOU UM MIDLEWARE"))
+    next()
+});
 
 const port = process.env.PORT_WWW_APP || 3333
 app.listen(port, () => {

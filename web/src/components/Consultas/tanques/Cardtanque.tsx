@@ -11,10 +11,12 @@ import imgCheck from '../../../../public/img/check.png'
 import api from '../../../services/api'
 
   export interface Tanques{
-    id: number,
+    _id: string,
     numero: number,
     capacidade: number,
-    tipo: string
+    tipo: string,
+    date: string,
+    newDate: string,
   }
 
   export interface CardTanqueProps {
@@ -58,10 +60,10 @@ const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
                 <div className={styles.valores}>
                   <label id="label-produtor" htmlFor="">Produtor_01</label>
                   <label htmlFor="">{tanques.capacidade}L</label>
-                  <label htmlFor="">60%</label>
-                  <label htmlFor="">05/10/2021</label>
+                  <label htmlFor="">Capacidade %</label>
+                  <label htmlFor="">{tanques.newDate}</label>
                   <label htmlFor="">{tanques.tipo}</label>
-                  <label htmlFor="">Vinho Caberne</label>
+                  <label htmlFor="">Vinho Teste</label>
                   <label htmlFor="">00:00:00</label>
                   <div className={styles.imgStatus}>
                       <label htmlFor=""><Image width={300} height={300} src={imgCheck} alt="Imagem check" objectFit="contain"/></label>  

@@ -2,7 +2,7 @@
 import styles from '../../../styles/components/Consultas/Clientes/Lista-clientes.module.css'
 
 export interface Clientes{
-    id: number,
+    _id: string,
     nome: string,
     telefone: number,
     email: string,
@@ -26,7 +26,7 @@ const ListarClientes: React.FC<CardClientesProps> = ({clientes}) =>{
                 <p>{clientes.rua}, {clientes.numend}, {clientes.bairro}</p>
                 <p>{clientes.telefone}</p>
                 <p>{clientes.email}</p>
-                <button>Detalhar...</button>
+                <a href={`/clientes/${clientes._id}`}><button>Detalhar...</button></a>
             </div>
 
         </div>

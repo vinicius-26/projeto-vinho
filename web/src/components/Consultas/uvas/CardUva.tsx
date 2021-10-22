@@ -5,9 +5,21 @@ import styles from '../../../styles/components/Consultas/Uvas/CardUva.module.css
 
 import imgFermentation from '../../../../public/img/fermentation.png'
 import imgUva from '../../../../public/img/uva.png'
-import { CardTanqueProps, Tanques } from '../tanques/Cardtanque';
 
-const CardUva: React.FC = () =>{
+export interface Uvas{
+    _id: string,
+    nome_uva: string,
+    id_cliente: string,
+    id_tanque: string,
+    safra: string,
+    lote: string
+}
+
+  export interface CardUvasProps {
+    uvas: Uvas,
+  }
+
+const CardUva: React.FC<CardUvasProps> = ({uvas}) =>{
     return(
         <div className={styles.container}>
             <div className={styles.content}>
@@ -30,21 +42,21 @@ const CardUva: React.FC = () =>{
                         </div>
 
                         <div className={styles.valores}>
-                            <div className={styles.imgStatus}>
-                                <label htmlFor=""><Image width={900} height={300} src={imgFermentation} alt="Imagem check" objectFit="contain"/></label>  
+                            <div className={styles.imgStatus}><label htmlFor=""><Image width={1600} height={2050} src={imgFermentation} alt="Imagem check" objectFit="contain"/></label>  
+                                
                             </div>
-                            <label id="label-produtor" htmlFor="">Produtor_01</label>
-                            <label htmlFor="">L123</label>
-                            <label htmlFor="">S123</label>
-                            <label htmlFor="">Tanque_[]</label>
-                            <label htmlFor="">Uva_Melot</label>
+                            <label id="label-produtor" htmlFor="">{uvas.id_cliente}</label>
+                            <label htmlFor="">{uvas.lote}</label>
+                            <label htmlFor="">{uvas.safra}</label>
+                            <label htmlFor="">Tanque {uvas.id_tanque}</label>
+                            <label htmlFor="">{uvas.nome_uva}</label>
                         </div>
 
                     </div>
                     </section>
                          
                 </main>
-            
+                
                 
             </div>
         </div>

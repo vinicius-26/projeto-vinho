@@ -1,6 +1,6 @@
 .containerLogin{
     width: 100%;
-    min-height: 100vh;
+    height: 42rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -12,7 +12,6 @@
     padding: 15px;
     position: relative;
     background-color: var(--background);
-
 }
 
 .login{

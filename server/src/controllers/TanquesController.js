@@ -21,7 +21,7 @@ class TanqueController {
   } 
 
   async index(req, res) {
-      Tanque.find().then(tanqueFind => {
+      Tanque.find().sort({date: 'desc'}).then(tanqueFind => {
       return res.status(200).json(tanqueFind)
     })
   }
