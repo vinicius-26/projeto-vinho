@@ -1,6 +1,6 @@
 .containerLogin{
     width: 100%;
-    height: 42rem;
+    height: 45rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -124,6 +124,7 @@
     text-align: center;
     transition: 0.2s;
     margin: 0;
+    cursor: pointer;
 }
 
 .login a:hover{

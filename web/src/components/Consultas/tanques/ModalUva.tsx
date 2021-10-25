@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import styles from '../../../styles/components/Consultas/Tanques/ModalUva.module.css'
 
-export function ModalUva({onClose = () => {}}){  
+export function ModalUva({onClose = () => {}, tanques}){  
     
     return(  
         <div className={styles.overlay}>
             <div className={styles.containerModal}>
                 <header>
-                    <strong>Uva que está entrando no tanque</strong>
+                    <strong>Uva que está entrando no tanque {tanques.numero}</strong>
                 </header>
 
                 <form className={styles.formModal} id="login" action="">     

@@ -1,6 +1,7 @@
 import styles from '../../styles/components/Login/Login.module.css'
+import Link from 'next/link';
 
-export function LoginUsuario(){
+export function LoginUsuario({setRegisterForm}){
   return(
     <div className={styles.containerLogin}>
       <div className={styles.login}>
@@ -20,11 +21,12 @@ export function LoginUsuario(){
           <input type="password" />
       
 
-          <button className={styles.loginButtonEntrar}>Entrar</button>
+          <Link href="/"><button className={styles.loginButtonEntrar}>Entrar</button></Link>
 
           <p>Não tem uma conta?</p>
 
-          <a href=""> Cadastrar-se</a>
+          <a onClick={setRegisterForm}> Cadastrar-se</a>
+          
         </form>
       </div>
     </div>

@@ -31,8 +31,7 @@ const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
     <div className={styles.container}>
       <div className={styles.content}>
 
-    {isModalVisible ? (
-    <ModalUva onClose={() => setIsModalVisible(false)}/>) : null}
+    {isModalVisible ? (<ModalUva tanques={tanques.numero} onClose={() => setIsModalVisible(false)}/>) : null}
 
         <main>                 
             <section>   

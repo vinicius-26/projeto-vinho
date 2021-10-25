@@ -26,10 +26,6 @@ mongoose
         console.log("Erro ao Conectar com o Banco de Dados : " + erro);
     });
 
-app.use((req, res, next) => {
-    res.send(console.log("OI EU SOU UM MIDLEWARE"))
-    next()
-});
 
 const port = process.env.PORT_WWW_APP || 3333
 app.listen(port, () => {

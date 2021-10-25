@@ -1,6 +1,6 @@
 import styles from '../../styles/components/Login/Cadastro.module.css'
 
-export function CadastroUsuario(){
+export function CadastroUsuario({setLoginForm}){
     return(
     
         <div className={styles.containerCadastro}>
@@ -43,7 +43,7 @@ export function CadastroUsuario(){
                     <button>Cadastrar-se</button>
                 </div>
                 <p>Já possui uma conta?</p>
-                <a href="">Login</a>
+                <a onClick={setLoginForm}>Login</a> 
             </div>
         </div>
     )

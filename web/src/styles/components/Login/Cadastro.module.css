@@ -159,6 +159,7 @@
     text-align: center;
     transition: 0.2s;
     margin: 0;
+    cursor: pointer;
 }
 
 .cadastroUsuario a:hover{

@@ -1,7 +1,9 @@
 import styles from '../../styles/components/NavBar.module.css'
 import Link from 'next/link';
+import { useState } from 'react';
 
-export function NavBar(){
+export function NavBar({NavBarInvisible}){
+
     return(
     <div className={styles.navbar}>
 
@@ -13,7 +15,7 @@ export function NavBar(){
 
         <Link href="/Consultas/Clientes"><a>CLIENTES</a></Link>
 
-        <Link href="/Login"><button>LOGIN</button></Link>
+        <Link href="/Login"><button onClick={NavBarInvisible}>LOGIN</button></Link>
 
     </div>
     )
