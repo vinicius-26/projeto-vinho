@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ModalUva } from './ModalUva';
 import Image from 'next/image'
+import { Uvas } from '../uvas/CardUva';
 
 import styles from '../../../styles/components/Consultas/Tanques/CardTanque.module.css'
 
 import imgTank from '../../../../public/img/tank.png'
 import imgPlus from '../../../../public/img/plus.png'
 import imgCheck from '../../../../public/img/check.png'
+import imgOff from '../../../../public/img/delete.png'
 
 import api from '../../../services/api'
 
@@ -23,15 +25,27 @@ import api from '../../../services/api'
     tanques: Tanques,
   }
 
+
 const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
+
   const [isModalVisible, setIsModalVisible]= useState(false);
+  const [isStatusOn, setIsStatusOn] = useState(false)
+  const [uvas, setUvas] = useState<any | null>(null);
+  const [isOcupado, setIsOcupado] = useState();
+
+  useEffect(() => {
+      api.get('http://localhost:3333/listuvas').then(({data}) => {
+        setUvas(data);
+        setIsOcupado
+    });
+  }, [])
 
   return(
 
     <div className={styles.container}>
       <div className={styles.content}>
 
-    {isModalVisible ? (<ModalUva tanques={tanques.numero} onClose={() => setIsModalVisible(false)}/>) : null}
+    {isModalVisible ? (<ModalUva tanques={tanques} onClose={() => setIsModalVisible(false)}/>) : null}
 
         <main>                 
             <section>   
@@ -51,21 +65,24 @@ const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
                   <label htmlFor="">Ocupação:</label>
                   <label htmlFor="">Data entrada:</label>
                   <label htmlFor="">Tipo:</label>
-                  <label htmlFor="">Vinho atual:</label>
+                  <label htmlFor="">Uva atual:</label>
                   <label htmlFor="">Tempo: </label>
                   <label htmlFor="">Status:</label>
                 </div>
 
                 <div className={styles.valores}>
                   <label id="label-produtor" htmlFor="">Produtor_01</label>
-                  <label htmlFor="">{tanques.capacidade}L</label>
-                  <label htmlFor="">Capacidade %</label>
+                  <label id="capacidade" htmlFor="">{tanques.capacidade}L</label>
+
+                  {}
+
                   <label htmlFor="">{tanques.newDate}</label>
                   <label htmlFor="">{tanques.tipo}</label>
-                  <label htmlFor="">Vinho Teste</label>
-                  <label htmlFor="">00:00:00</label>
+                  <label htmlFor="">{}</label>
+                  <label htmlFor="" id="counter">00:00:00</label>
                   <div className={styles.imgStatus}>
-                      <label htmlFor=""><Image width={300} height={300} src={imgCheck} alt="Imagem check" objectFit="contain"/></label>  
+                      { isStatusOn ? <label htmlFor=""><Image width={300} height={300} src={imgCheck} alt="Imagem check" objectFit="contain"/></label> : 
+                      <label htmlFor=""><Image width={300} height={300} src={imgOff} alt="Imagem off" objectFit="contain"/></label>}
                   </div>
                 </div>
             </div>
@@ -74,7 +91,6 @@ const CardTanque: React.FC<CardTanqueProps> = ({tanques}) =>{
               <button className={styles.buttonRetirarUva}>Retirar uva</button>
             </div>
         </section> 
-
         </main>       
       </div>
     </div>

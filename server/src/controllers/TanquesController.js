@@ -9,7 +9,8 @@ class TanqueController {
     const newTanque = {
       numero: req.body.numero,
       capacidade: req.body.capacidade,
-      tipo: req.body.tipo     
+      tipo: req.body.tipo,
+      
     };
     new Tanque(newTanque)
       .save()
@@ -25,7 +26,8 @@ class TanqueController {
       return res.status(200).json(tanqueFind)
     })
   }
-
 }
+
+
 
 module.exports = TanqueController;

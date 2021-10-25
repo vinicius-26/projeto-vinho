@@ -111,15 +111,21 @@
     font-size: 8.75;
     font-weight: 600;
     background-size: contain;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+
 }
 
 .containerModal strong{
     font-size: 1.4rem;
     color: var(--title);
+}
+
+.containerModal p{
+    color: var(--background-primary);
+    font-weight: bolder;
 }
 
 .formModal select{
