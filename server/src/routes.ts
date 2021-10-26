@@ -24,6 +24,7 @@ routes.put('/editmovie',usersController.editWishList);
 //rota para cadastro de tanques
 routes.post('/addtanque',tanquesController.create);
 routes.get('/listtanques',tanquesController.index);
+routes.put('/insertuva',tanquesController.insert);
 
 //rota para cadastro de clientes
 routes.post('/addcliente',clientesController.create);

@@ -62,6 +62,10 @@
     text-align: center;
 }
 
+.imgPlus a{
+    pointer-events: none;
+}
+
 .buttonOpenModal{
     border: none;
     background: transparent;

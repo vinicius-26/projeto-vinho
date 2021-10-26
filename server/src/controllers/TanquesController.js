@@ -26,6 +26,17 @@ class TanqueController {
       return res.status(200).json(tanqueFind)
     })
   }
+
+  async insert(req, res) {
+    Tanque.findById(req.body._id).then(tanqueFind => { 
+      tanqueFind.uva_input = req.body.uva_input,
+      tanqueFind.qtd_uva_input = req.body.qtd_uva_input,
+      tanqueFind.clientes_tanque = req.body.clientes_tanque,
+      tanqueFind.save();
+
+    return res.status(200).json(tanqueFind)
+  })
+  }
 }
 
 

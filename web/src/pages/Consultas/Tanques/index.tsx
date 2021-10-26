@@ -39,14 +39,16 @@ const TanquesList = (props) => {
     // Fetch data from external API
     const response = await fetch('http://localhost:3333/listtanques')
     const data = await response.json()
-  
     const tanques = data.map(tanques => {
       return {
         _id: tanques._id,
         numero: tanques.numero,
         capacidade: tanques.capacidade,
         tipo: tanques.tipo,
-        newDate: format(parseISO(tanques.date), 'd MMM yy', {locale: ptBR }),
+        newDate: format(parseISO(tanques.date), 'd' + '/' + 'M' + '/' + 'y', {locale: ptBR }),
+        uva_input: (tanques.uva_input ? tanques.uva_input : null),
+        qtd_uva_input: (tanques.qtd_uva_input ? tanques.qtd_uva_input : null),
+        clientes_tanque: (tanques.clientes_tanque ? tanques.clientes_tanque : null),
       }
     })
     // Pass data to the page via props
